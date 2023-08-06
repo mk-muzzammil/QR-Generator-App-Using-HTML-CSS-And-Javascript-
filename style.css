@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #47185c;;
+  --primary-dark:#14001D;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: var(--primary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer{
+  padding: 1rem;
+  height: 250px;
+  width: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.34);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
+  
+}
+.primary-heaidng{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.secondary-heaidng{
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.6;
+  padding-bottom: 0.5rem;
+}
+.inpuContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:330px;
+}
+
+.button{
+  padding: 0.8rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: #ffffff;
+  outline: none;
+  border:none;
+  transition: all 0.3s ease-in;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: var(--primary-dark);
+  transition: all 0.3s ease-out;
+
+}
+.inpuContainer input{
+  font-size: 1.2rem;
+  padding: 0.3rem 1.3rem;
+  max-width: 100%;
+}
+.inpuContainer input:focus-visible{
+  border:2px solid var(--primary);
+}
+
+.qrContainer{
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  height:0;
+  opacity: 0;
+  transition: opacity 0.3s eas-in, height 0.1s ease;
+}
+.qrContainer.show{
+  opacity: 1;
+  transition: opacity 0.3s eas-in, height 0.1s ease;
+  height:150px;
+  padding: 1.5rem;
+
+
+
+}
+#qrCode{
+  width: 150px;
+}
+
+/* @media screen and (max-width:720px) {
+  /* .primary-heaidng{
+    font-size: 3vw;
+  }
+  .secondary-heaidng{
+    font-size: 2vw;
+  } */
+  
+/* } */ 
+
+
